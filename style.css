@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.sticky {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  background-color: rgb(222, 158, 54);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  height: 6vh;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav div:hover,
+nav div.selected {
+  display: block;
+}
+
+nav div:hover a {
+  color: white;
+}
+
+header {
+  height: 70vh;
+  background-color: rgb(83, 98, 113);
+  color: rgb(255, 255, 255);
+  background-image: url(https://cdn.glitch.me/178322fd-f298-4bc6-af8c-a4620f0518b8%2FEp3UveXeoD63rsfrCLvMSo-1200-80.jpg?v=1633444415079);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 6px 6px rgb(222, 158, 54);
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px auto;
+  color: black;
+  font-size: 1.1em;
+  max-width: 1000px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 20px;
+  border-top: 3px solid #de9e36;
+}
+
+figure img {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+.imagegallery {
+  width: 100%;
+  display: flex;
+}
+
+.imagegallery figure {
+  width: 30%;
+}
+
+.imagegallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgb(222, 158, 54);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+}
+
+footer div {
+  flex: 1;
+}
+
+.footerItems {
+  transition: 0.1s ease-in-out;
+}
+
+.footerItems a {
+  color: black;
+}
+
+.footerItems:hover {
+  transform: scale(1.5);
+  color: black;
+}
+
+span {
+  color: rgb(222, 158, 54);
+  font-weight: bold;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+  section {
+    max-width: 100%;
+  }
+
+  header {
+    display: block;
+    height: 20vh;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 3px 3px rgb(222, 158, 54);
+  }
+
+  section{
+    width: 80vw;;
+  }
+  
+  nav {
+    height: 40vh;
+    flex-direction: column;
+  }
+
+  nav div {
+    border-bottom: 1px solid white;
+  }
+
+  .sticky {
+    position: initial;
+  }
+}
